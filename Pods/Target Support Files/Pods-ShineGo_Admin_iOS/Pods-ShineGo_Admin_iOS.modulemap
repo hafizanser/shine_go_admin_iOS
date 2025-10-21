@@ -1,0 +1,6 @@
+framework module Pods_ShineGo_Admin_iOS {
+  umbrella header "Pods-ShineGo_Admin_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

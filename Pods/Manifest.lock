@@ -1,0 +1,87 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.7.4)
+  - AdvancedPageControl (0.9.0)
+  - Cosmos (23.0.0)
+  - CountryPickerView (3.3.0)
+  - IQKeyboardManagerSwift (6.2.1)
+  - lottie-ios (4.5.2)
+  - MBProgressHUD (1.2.0)
+  - MonthYearPicker (4.0.2)
+  - SDWebImage (5.21.1):
+    - SDWebImage/Core (= 5.21.1)
+  - SDWebImage/Core (5.21.1)
+  - Stripe (24.20.0):
+    - StripeApplePay (= 24.20.0)
+    - StripeCore (= 24.20.0)
+    - StripePayments (= 24.20.0)
+    - StripePaymentsUI (= 24.20.0)
+    - StripeUICore (= 24.20.0)
+  - StripeApplePay (24.20.0):
+    - StripeCore (= 24.20.0)
+  - StripeCore (24.20.0)
+  - StripePayments (24.20.0):
+    - StripeCore (= 24.20.0)
+    - StripePayments/Stripe3DS2 (= 24.20.0)
+  - StripePayments/Stripe3DS2 (24.20.0):
+    - StripeCore (= 24.20.0)
+  - StripePaymentsUI (24.20.0):
+    - StripeCore (= 24.20.0)
+    - StripePayments (= 24.20.0)
+    - StripeUICore (= 24.20.0)
+  - StripeUICore (24.20.0):
+    - StripeCore (= 24.20.0)
+  - UPCarouselFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - AdvancedPageControl
+  - Cosmos (~> 23.0)
+  - CountryPickerView
+  - IQKeyboardManagerSwift (= 6.2.1)
+  - lottie-ios
+  - MBProgressHUD
+  - MonthYearPicker (~> 4.0.2)
+  - SDWebImage
+  - Stripe
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - AdvancedPageControl
+    - Cosmos
+    - CountryPickerView
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - MBProgressHUD
+    - MonthYearPicker
+    - SDWebImage
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripePayments
+    - StripePaymentsUI
+    - StripeUICore
+    - UPCarouselFlowLayout
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: a380d57270b6b2d321c4add024ba5c466a7f5cfd
+  AdvancedPageControl: 39e3b32b00b2d324c534f8e17cc6c5be9abe84b7
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  CountryPickerView: 6322ada32a80b0cd721b0267282a5c24f406f263
+  IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
+  lottie-ios: 96784afc26ea031d3e2b6cae342a4b8915072489
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MonthYearPicker: 91f77106e6806d8c93c69e943ab0795fd420657f
+  SDWebImage: f29024626962457f3470184232766516dee8dfea
+  Stripe: 517f6e3e25f01641be2adab3aa3d1f45d4d443c6
+  StripeApplePay: 78f0c4a2c2af7f03b298d2f9bc7a1a0044490923
+  StripeCore: 4430d270394b09c97dec8b2436228e76fcb3f84c
+  StripePayments: db1f0a2e914a276028b23f5e1467e1e88f6a0238
+  StripePaymentsUI: d6b0285fdda8ac9cf8e83de423ca4efbf8b29439
+  StripeUICore: 31c439e9a03cd178415fa9dd65cc1ce71db260ec
+  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
+
+PODFILE CHECKSUM: 45a34ce651ef65205f77b40985174317ba957736
+
+COCOAPODS: 1.16.2
