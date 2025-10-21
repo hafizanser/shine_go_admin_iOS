@@ -9,6 +9,7 @@ import UIKit
 
 class washTypeCell: UITableViewCell {
 
+    @IBOutlet weak var btnLocation: UIButton!
     @IBOutlet weak var lblCreatedDateAndTime: UILabel!
     @IBOutlet weak var lblBokkingDateAndTime: UILabel!
     @IBOutlet weak var lblLocation: UILabel!
@@ -21,6 +22,7 @@ class washTypeCell: UITableViewCell {
     @IBOutlet weak var imgMain: UIImageView!
     
     var locationButtonTapped:(()->())?
+    var callButtonTapped:(()->())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,4 +39,7 @@ class washTypeCell: UITableViewCell {
         locationButtonTapped?()
     }
     
+    @IBAction func callButtonWasPressed(_ sender: Any) {
+        callButtonTapped?()
+    }
 }

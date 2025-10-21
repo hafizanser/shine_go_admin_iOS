@@ -33,7 +33,11 @@ class Router {
         controller.show(control, sender: nil)
     }
     
-   
+    func openWebViewVC(controller:UIViewController, buttonTapped: Int) -> Void {
+        let control = Storyboards.MAIN.instantiateViewController(withIdentifier: WebViewVC.className) as! WebViewVC
+        control.buttonTapped = buttonTapped
+        controller.show(control, sender: nil)
+    }
     
     //POPUPS
     func openSetDateTimePopUPVC(title:String = "Month & Year",minumumDate:Date? = nil,maximumDate:Date? = nil,alreadySelectedDate:Date? = nil,isDateOnly:Bool = false ,controller:UIViewController,completionHandler:@escaping DateSelectionCompletionHandler) -> Void {

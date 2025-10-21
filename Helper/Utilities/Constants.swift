@@ -493,7 +493,7 @@ struct Colors {
     static let PLACEHOLDER_COLOR = #colorLiteral(red: 0.5176470588, green: 0.5176470588, blue: 0.5176470588, alpha: 1)
 
     static let BORDER_COLOR_POPUP = #colorLiteral(red: 0.8078431373, green: 0.831372549, blue: 0.8549019608, alpha: 1)
-    static let BASE_COLOR_PINK = #colorLiteral(red: 0.8745098039, green: 0.2078431373, blue: 0.5098039216, alpha: 1)
+    static let BASE_COLOR_DARK_BLUE = #colorLiteral(red: 0.2, green: 0.3921568627, blue: 0.5176470588, alpha: 1)
     static let BLUE_COLOR_APP = #colorLiteral(red: 0.09803921569, green: 0.5529411765, blue: 0.9803921569, alpha: 1)
 
     static let SELECTED_COLOR = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)

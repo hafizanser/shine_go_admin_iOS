@@ -14,6 +14,8 @@ class MapCell: UITableViewCell {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var imgPinLocation: UIImageView!
     
+    var mapButtonTapped:(()->())?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
@@ -39,6 +41,10 @@ class MapCell: UITableViewCell {
         }
 
         mapView.fitAllMarkers()
+    }
+    //MARK: - IBActions
+    @IBAction func openMapButtonWasPressed(_ sender: Any) {
+       mapButtonTapped?()
     }
 }
 

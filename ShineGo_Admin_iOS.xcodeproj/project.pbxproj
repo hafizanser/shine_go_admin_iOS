@@ -17,14 +17,6 @@
 		E254FD832EA787C700AD04DD /* BookingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD712EA787C700AD04DD /* BookingsCell.swift */; };
 		E254FD842EA787C700AD04DD /* HomesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD722EA787C700AD04DD /* HomesVC.swift */; };
 		E254FD852EA787C700AD04DD /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD742EA787C700AD04DD /* WebViewVC.swift */; };
-		E254FD9F2EA78C6E00AD04DD /* Epilogue-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD8E2EA78C6E00AD04DD /* Epilogue-Black.ttf */; };
-		E254FDA12EA78C6E00AD04DD /* Epilogue-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD902EA78C6E00AD04DD /* Epilogue-SemiBold.ttf */; };
-		E254FDA22EA78C6E00AD04DD /* Epilogue-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD912EA78C6E00AD04DD /* Epilogue-Thin.ttf */; };
-		E254FDA32EA78C6E00AD04DD /* Epilogue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD922EA78C6E00AD04DD /* Epilogue-Regular.ttf */; };
-		E254FDA42EA78C6E00AD04DD /* Epilogue-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD932EA78C6E00AD04DD /* Epilogue-ExtraBold.ttf */; };
-		E254FDA52EA78C6E00AD04DD /* Epilogue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD942EA78C6E00AD04DD /* Epilogue-Bold.ttf */; };
-		E254FDA62EA78C6E00AD04DD /* Epilogue-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD952EA78C6E00AD04DD /* Epilogue-Medium.ttf */; };
-		E254FDA82EA78C6E00AD04DD /* Epilogue-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FD972EA78C6E00AD04DD /* Epilogue-Light.ttf */; };
 		E254FDAA2EA7946600AD04DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E254FDA92EA7946600AD04DD /* LaunchScreen.storyboard */; };
 		E254FDBC2EA7982600AD04DD /* OrderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FDAC2EA7982600AD04DD /* OrderDetailVC.swift */; };
 		E254FDBF2EA7982600AD04DD /* BeforeImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E254FDB12EA7982600AD04DD /* BeforeImagesCell.xib */; };
@@ -38,6 +30,14 @@
 		E254FDCD2EA7998D00AD04DD /* Clip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E254FDCC2EA7998D00AD04DD /* Clip.mp4 */; };
 		E254FDD02EA7A8B400AD04DD /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FDCE2EA7A8B400AD04DD /* ImageCell.swift */; };
 		E254FDD12EA7A8B400AD04DD /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E254FDCF2EA7A8B400AD04DD /* ImageCell.xib */; };
+		E254FDD52EA7BE1F00AD04DD /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FDD42EA7BE1F00AD04DD /* OrderHistoryVC.swift */; };
+		E254FDDD2EA7D06700AD04DD /* Epilogue-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDD62EA7D06600AD04DD /* Epilogue-Light.ttf */; };
+		E254FDDE2EA7D06700AD04DD /* Epilogue-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDD72EA7D06600AD04DD /* Epilogue-Black.ttf */; };
+		E254FDDF2EA7D06700AD04DD /* Epilogue-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDD82EA7D06600AD04DD /* Epilogue-SemiBold.ttf */; };
+		E254FDE02EA7D06700AD04DD /* Epilogue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDD92EA7D06600AD04DD /* Epilogue-Regular.ttf */; };
+		E254FDE12EA7D06700AD04DD /* Epilogue-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDDA2EA7D06700AD04DD /* Epilogue-ExtraBold.ttf */; };
+		E254FDE22EA7D06700AD04DD /* Epilogue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDDB2EA7D06700AD04DD /* Epilogue-Bold.ttf */; };
+		E254FDE32EA7D06700AD04DD /* Epilogue-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E254FDDC2EA7D06700AD04DD /* Epilogue-Medium.ttf */; };
 		E2CDCADF2EA679CC001501A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CDCADE2EA679CC001501A8 /* AppDelegate.swift */; };
 		E2CDCAE12EA679CC001501A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CDCAE02EA679CC001501A8 /* SceneDelegate.swift */; };
 		E2CDCAE62EA679CC001501A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CDCAE42EA679CC001501A8 /* Main.storyboard */; };
@@ -144,14 +144,6 @@
 		E254FD712EA787C700AD04DD /* BookingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingsCell.swift; sourceTree = "<group>"; };
 		E254FD722EA787C700AD04DD /* HomesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomesVC.swift; sourceTree = "<group>"; };
 		E254FD742EA787C700AD04DD /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
-		E254FD8E2EA78C6E00AD04DD /* Epilogue-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-Black.ttf"; path = "../../../../../Documents/GitHub/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-Black.ttf"; sourceTree = "<group>"; };
-		E254FD902EA78C6E00AD04DD /* Epilogue-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-SemiBold.ttf"; path = "../../../../../Documents/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-SemiBold.ttf"; sourceTree = "<group>"; };
-		E254FD912EA78C6E00AD04DD /* Epilogue-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-Thin.ttf"; path = "../../../../../Documents/GitHub/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-Thin.ttf"; sourceTree = "<group>"; };
-		E254FD922EA78C6E00AD04DD /* Epilogue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-Regular.ttf"; path = "../../../../../Documents/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-Regular.ttf"; sourceTree = "<group>"; };
-		E254FD932EA78C6E00AD04DD /* Epilogue-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-ExtraBold.ttf"; path = "../../../../../Documents/GitHub/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-ExtraBold.ttf"; sourceTree = "<group>"; };
-		E254FD942EA78C6E00AD04DD /* Epilogue-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-Bold.ttf"; path = "../../../../../Documents/GitHub/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-Bold.ttf"; sourceTree = "<group>"; };
-		E254FD952EA78C6E00AD04DD /* Epilogue-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-Medium.ttf"; path = "../../../../../Documents/GitHub/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-Medium.ttf"; sourceTree = "<group>"; };
-		E254FD972EA78C6E00AD04DD /* Epilogue-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Epilogue-Light.ttf"; path = "../../../../../Documents/GitHub/ShineGo_iOS/ShineGo/Resources/Fonts/Epilogue-Light.ttf"; sourceTree = "<group>"; };
 		E254FDA92EA7946600AD04DD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E254FDAC2EA7982600AD04DD /* OrderDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailVC.swift; sourceTree = "<group>"; };
 		E254FDB12EA7982600AD04DD /* BeforeImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeforeImagesCell.xib; sourceTree = "<group>"; };
@@ -165,6 +157,14 @@
 		E254FDCC2EA7998D00AD04DD /* Clip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clip.mp4; sourceTree = "<group>"; };
 		E254FDCE2EA7A8B400AD04DD /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		E254FDCF2EA7A8B400AD04DD /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		E254FDD42EA7BE1F00AD04DD /* OrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
+		E254FDD62EA7D06600AD04DD /* Epilogue-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Light.ttf"; sourceTree = "<group>"; };
+		E254FDD72EA7D06600AD04DD /* Epilogue-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Black.ttf"; sourceTree = "<group>"; };
+		E254FDD82EA7D06600AD04DD /* Epilogue-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-SemiBold.ttf"; sourceTree = "<group>"; };
+		E254FDD92EA7D06600AD04DD /* Epilogue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Regular.ttf"; sourceTree = "<group>"; };
+		E254FDDA2EA7D06700AD04DD /* Epilogue-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E254FDDB2EA7D06700AD04DD /* Epilogue-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Bold.ttf"; sourceTree = "<group>"; };
+		E254FDDC2EA7D06700AD04DD /* Epilogue-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Medium.ttf"; sourceTree = "<group>"; };
 		E2CDCADB2EA679CC001501A8 /* ShineGo_Admin_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShineGo_Admin_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CDCADE2EA679CC001501A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2CDCAE02EA679CC001501A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -345,14 +345,13 @@
 		E254FD862EA78C5F00AD04DD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E254FD8E2EA78C6E00AD04DD /* Epilogue-Black.ttf */,
-				E254FD942EA78C6E00AD04DD /* Epilogue-Bold.ttf */,
-				E254FD932EA78C6E00AD04DD /* Epilogue-ExtraBold.ttf */,
-				E254FD972EA78C6E00AD04DD /* Epilogue-Light.ttf */,
-				E254FD952EA78C6E00AD04DD /* Epilogue-Medium.ttf */,
-				E254FD922EA78C6E00AD04DD /* Epilogue-Regular.ttf */,
-				E254FD902EA78C6E00AD04DD /* Epilogue-SemiBold.ttf */,
-				E254FD912EA78C6E00AD04DD /* Epilogue-Thin.ttf */,
+				E254FDD72EA7D06600AD04DD /* Epilogue-Black.ttf */,
+				E254FDDB2EA7D06700AD04DD /* Epilogue-Bold.ttf */,
+				E254FDDA2EA7D06700AD04DD /* Epilogue-ExtraBold.ttf */,
+				E254FDD62EA7D06600AD04DD /* Epilogue-Light.ttf */,
+				E254FDDC2EA7D06700AD04DD /* Epilogue-Medium.ttf */,
+				E254FDD92EA7D06600AD04DD /* Epilogue-Regular.ttf */,
+				E254FDD82EA7D06600AD04DD /* Epilogue-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -407,6 +406,14 @@
 			path = AfterImagesCell;
 			sourceTree = "<group>";
 		};
+		E254FDD22EA7BDE000AD04DD /* OrderHistoryVC */ = {
+			isa = PBXGroup;
+			children = (
+				E254FDD42EA7BE1F00AD04DD /* OrderHistoryVC.swift */,
+			);
+			path = OrderHistoryVC;
+			sourceTree = "<group>";
+		};
 		E2CDCAD22EA679CC001501A8 = {
 			isa = PBXGroup;
 			children = (
@@ -444,6 +451,7 @@
 		E2CDCAF22EA679DD001501A8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E254FDD22EA7BDE000AD04DD /* OrderHistoryVC */,
 				E254FDAB2EA7982600AD04DD /* OrderDetails */,
 				E254FD6E2EA787C700AD04DD /* Homes */,
 				E254FD5E2EA787C700AD04DD /* Profiles */,
@@ -815,29 +823,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E254FDDE2EA7D06700AD04DD /* Epilogue-Black.ttf in Resources */,
 				E254FD762EA787C700AD04DD /* logoutCell.xib in Resources */,
 				E2CDCBC82EA67D1F001501A8 /* Auth.storyboard in Resources */,
+				E254FDDF2EA7D06700AD04DD /* Epilogue-SemiBold.ttf in Resources */,
 				E254FDAA2EA7946600AD04DD /* LaunchScreen.storyboard in Resources */,
 				E254FDD12EA7A8B400AD04DD /* ImageCell.xib in Resources */,
-				E254FDA12EA78C6E00AD04DD /* Epilogue-SemiBold.ttf in Resources */,
+				E254FDE12EA7D06700AD04DD /* Epilogue-ExtraBold.ttf in Resources */,
 				E254FDBF2EA7982600AD04DD /* BeforeImagesCell.xib in Resources */,
 				E254FDC22EA7982600AD04DD /* washTypeCell.xib in Resources */,
 				E254FD822EA787C700AD04DD /* BookingsCell.xib in Resources */,
-				E254FDA32EA78C6E00AD04DD /* Epilogue-Regular.ttf in Resources */,
-				E254FDA22EA78C6E00AD04DD /* Epilogue-Thin.ttf in Resources */,
 				E2CDCBA02EA67C8A001501A8 /* BottomHomeView.xib in Resources */,
 				E254FD772EA787C700AD04DD /* privacyPolicyCell.xib in Resources */,
 				E254FDC52EA7982600AD04DD /* AfterImagesCell.xib in Resources */,
 				E2CDCAE82EA679CF001501A8 /* Assets.xcassets in Resources */,
-				E254FDA62EA78C6E00AD04DD /* Epilogue-Medium.ttf in Resources */,
 				E254FDCD2EA7998D00AD04DD /* Clip.mp4 in Resources */,
-				E254FDA82EA78C6E00AD04DD /* Epilogue-Light.ttf in Resources */,
 				E254FDCB2EA798D900AD04DD /* MapCell.xib in Resources */,
+				E254FDDD2EA7D06700AD04DD /* Epilogue-Light.ttf in Resources */,
+				E254FDE22EA7D06700AD04DD /* Epilogue-Bold.ttf in Resources */,
 				E2CDCAE62EA679CC001501A8 /* Main.storyboard in Resources */,
-				E254FD9F2EA78C6E00AD04DD /* Epilogue-Black.ttf in Resources */,
-				E254FDA52EA78C6E00AD04DD /* Epilogue-Bold.ttf in Resources */,
-				E254FDA42EA78C6E00AD04DD /* Epilogue-ExtraBold.ttf in Resources */,
+				E254FDE02EA7D06700AD04DD /* Epilogue-Regular.ttf in Resources */,
 				E2CDCAF82EA67C38001501A8 /* Popups.storyboard in Resources */,
+				E254FDE32EA7D06700AD04DD /* Epilogue-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -902,6 +909,7 @@
 				E2CDCB7C2EA67C8A001501A8 /* NetworkService.swift in Sources */,
 				E2CDCB8C2EA67C8A001501A8 /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 				E2CDCB152EA67C4C001501A8 /* MenuOptionPopUpVC.swift in Sources */,
+				E254FDD52EA7BE1F00AD04DD /* OrderHistoryVC.swift in Sources */,
 				E2CDCB9F2EA67C8A001501A8 /* BottomHomeView.swift in Sources */,
 				E2CDCBB82EA67C8A001501A8 /* UIImage+Extension.swift in Sources */,
 				E2CDCBB32EA67C8A001501A8 /* UIDevice+Extension.swift in Sources */,

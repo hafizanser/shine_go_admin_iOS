@@ -31,6 +31,47 @@ class orderDetailsVC: UIViewController {
         tableView.register(UINib(nibName: BeforeImagesCell.className, bundle: nil), forCellReuseIdentifier: BeforeImagesCell.className)
         tableView.register(UINib(nibName: AfterImagesCell.className, bundle: nil), forCellReuseIdentifier: AfterImagesCell.className)
     }
+    
+    private func openInGoogleMaps(latitude: Double, longitude: Double, placeName: String) {
+        let googleMapsURLString = "comgooglemaps://?q=\(latitude),\(longitude)&center=\(latitude),\(longitude)&zoom=14"
+        let webURLString = "https://www.google.com/maps/search/?api=1&query=\(latitude),\(longitude)"
+        if let googleMapsURL = URL(string: googleMapsURLString),
+           UIApplication.shared.canOpenURL(googleMapsURL) {
+            UIApplication.shared.open(googleMapsURL, options: [:], completionHandler: nil)
+        } else if let webURL = URL(string: webURLString) {
+            UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+        }
+    }
+    // MARK: - Google Maps (Address Based)
+    private func openAddressInGoogleMaps(address: String) {
+        let encodedAddress = address.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        let googleMapsURLString = "comgooglemaps://?q=\(encodedAddress)"
+        let webURLString = "https://www.google.com/maps/search/?api=1&query=\(encodedAddress)"
+        
+        if let googleMapsURL = URL(string: googleMapsURLString),
+           UIApplication.shared.canOpenURL(googleMapsURL) {
+            UIApplication.shared.open(googleMapsURL, options: [:], completionHandler: nil)
+        } else if let webURL = URL(string: webURLString) {
+            UIApplication.shared.open(webURL, options: [:], completionHandler: nil)
+        }
+    }
+
+    // MARK: - Phone Call
+    private func makePhoneCall(phoneNumber: String) {
+        
+        let cleanedNumber = phoneNumber.replacingOccurrences(of: " ", with: "")
+        
+        if let phoneURL = URL(string: "tel://\(cleanedNumber)"),
+           UIApplication.shared.canOpenURL(phoneURL) {
+            UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)
+        } else {
+            
+            let alert = UIAlertController(title: "Error", message: "Your device cannot make calls.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(alert, animated: true)
+        }
+    }
+
     //MARK: - IBActions
 }
 extension orderDetailsVC: UITableViewDataSource, UITableViewDelegate {
@@ -48,10 +89,27 @@ extension orderDetailsVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: washTypeCell.className, for: indexPath) as! washTypeCell
             cell.selectionStyle = .none
+            cell.locationButtonTapped = {[weak self] in
+                guard let self = self else { return }
+                let address = cell.lblLocation.text ?? ""
+                self.openAddressInGoogleMaps(address: address)
+            }
+            cell.callButtonTapped = {
+                let phoneNumber = cell.lblPhoneNumber.text ?? ""
+                self.makePhoneCall(phoneNumber: phoneNumber)
+            }
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: MapCell.className, for: indexPath) as! MapCell
             cell.selectionStyle = .none
+            cell.mapButtonTapped = {[weak self] in
+                guard let self = self else { return }
+                let latitude = 37.7749
+                let longitude = -122.4194
+                let locationName = "Customer Location"
+                
+                self.openInGoogleMaps(latitude: latitude, longitude: longitude, placeName: locationName)
+            }
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: BeforeImagesCell.className, for: indexPath) as! BeforeImagesCell

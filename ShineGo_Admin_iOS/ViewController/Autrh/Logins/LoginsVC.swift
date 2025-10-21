@@ -89,7 +89,7 @@ class LoginsVC: UIViewController {
     
     @IBAction func loginButtonWasPressed(_ sender: Any) {
         if CheckFields(){
-            Router.shared.openorderDetailsVC(controller: self)
+            ModeSelection.instance.homeMode()
         }
     }
 }

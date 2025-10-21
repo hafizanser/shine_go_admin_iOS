@@ -43,7 +43,7 @@ class HomesVC: UIViewController {
     }
     
     @IBAction func upcomingOrdersButtonWaspressed(_ sender: Any) {
-        lblUpcomingOrders.textColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0)
+        lblUpcomingOrders.textColor = UIColor.white
         lblTodayOrders.textColor = UIColor.gray
         imgUpcomingOrders.backgroundColor = UIColor.white
         imgTodayOrder.backgroundColor = UIColor.clear
@@ -61,7 +61,7 @@ extension HomesVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: BookingsCell.className, for: indexPath) as! BookingsCell
         cell.selectionStyle = .none
         cell.nextButtonTapped = {
-            
+            Router.shared.openorderDetailsVC(controller: self)
         }
         return cell
     }

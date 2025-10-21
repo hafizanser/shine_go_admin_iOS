@@ -63,10 +63,10 @@ extension ProfilesVC: UITableViewDataSource, UITableViewDelegate {
             ) as! privacyPolicyCell
             cell.selectionStyle = .none
             cell.privacyPolicyButtonTapped = {
-                
+                Router.shared.openWebViewVC(controller: self, buttonTapped: 1)
             }
             cell.termsAndConditionButtonTapped = {
-                
+                Router.shared.openWebViewVC(controller: self, buttonTapped: 2)
             }
             return cell
             
