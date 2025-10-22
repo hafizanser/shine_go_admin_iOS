@@ -31,7 +31,7 @@ class washTypeCell: UITableViewCell {
 
     //MARK: - Helper Functions
     private func setupUI(){
-        
+        lblPrice.roundCornersSpecific([.bottomLeft], radius: 30)
     }
     
     //MARK: - IBActions

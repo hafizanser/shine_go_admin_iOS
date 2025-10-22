@@ -38,7 +38,7 @@
                             <constraint firstAttribute="height" constant="50" id="wLk-HZ-Y3G"/>
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                        <state key="normal" image="ic_direction"/>
+                        <state key="normal" image="ic_direction_large"/>
                         <connections>
                             <action selector="openMapButtonWasPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aUF-Mp-JYC"/>
                         </connections>
@@ -65,7 +65,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ic_direction" width="25" height="25"/>
+        <image name="ic_direction_large" width="40" height="40"/>
         <image name="ic_pin" width="30" height="30"/>
         <namedColor name="Base_color_green">
             <color red="0.063000001013278961" green="0.53299999237060547" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -89,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today 11:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-af-Gc7">
-                                <rect key="frame" x="161" y="112.33333333333331" width="80" height="15.333333333333314"/>
+                                <rect key="frame" x="161" y="112.33333333333333" width="80" height="15.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Epilogue-Medium" family="Epilogue" pointSize="14.699999809265137"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JCa-Sc-QqV" secondAttribute="trailing" id="0Qm-ed-ygl"/>
                             <constraint firstItem="nSL-af-Gc7" firstAttribute="leading" secondItem="soi-ZE-M27" secondAttribute="trailing" constant="38" id="1HH-qX-cKU"/>

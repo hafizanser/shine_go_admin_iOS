@@ -47,7 +47,6 @@ class orderDetailsVC: UIViewController {
         let encodedAddress = address.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         let googleMapsURLString = "comgooglemaps://?q=\(encodedAddress)"
         let webURLString = "https://www.google.com/maps/search/?api=1&query=\(encodedAddress)"
-        
         if let googleMapsURL = URL(string: googleMapsURLString),
            UIApplication.shared.canOpenURL(googleMapsURL) {
             UIApplication.shared.open(googleMapsURL, options: [:], completionHandler: nil)
@@ -65,7 +64,6 @@ class orderDetailsVC: UIViewController {
            UIApplication.shared.canOpenURL(phoneURL) {
             UIApplication.shared.open(phoneURL, options: [:], completionHandler: nil)
         } else {
-            
             let alert = UIAlertController(title: "Error", message: "Your device cannot make calls.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             present(alert, animated: true)

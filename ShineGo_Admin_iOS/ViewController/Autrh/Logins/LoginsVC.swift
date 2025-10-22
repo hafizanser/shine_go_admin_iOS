@@ -12,6 +12,7 @@ class LoginsVC: UIViewController {
 
     @IBOutlet weak var viewVideo: UIView!
     
+    @IBOutlet weak var btnHideUnhide: UIButton!
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfEmailAddress: UITextField!
     
@@ -90,6 +91,17 @@ class LoginsVC: UIViewController {
     @IBAction func loginButtonWasPressed(_ sender: Any) {
         if CheckFields(){
             ModeSelection.instance.homeMode()
+        }
+    }
+    @IBAction func hideUnhideButtonWasPressed(_ sender: Any) {
+        if btnHideUnhide.tag == 0 {
+            btnHideUnhide.tag = 1
+            btnHideUnhide.setImage(UIImage(named: "ic_unhide"), for: .normal)
+            tfPassword.isSecureTextEntry = false
+        } else {
+            btnHideUnhide.tag = 0
+            btnHideUnhide.setImage(UIImage(named: "ic_hide"), for: .normal)
+            tfPassword.isSecureTextEntry = true
         }
     }
 }
