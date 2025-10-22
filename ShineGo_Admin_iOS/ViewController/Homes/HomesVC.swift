@@ -58,8 +58,8 @@ class HomesVC: UIViewController {
         let obj5 = HomeModel(title: "Gold Shine",time: "10 - 30 Mins",phone: "+92 1245986",address: "Ichra bazar Mazang",appointment: "Today 5:00")
         let obj6 = HomeModel(title: "Gold Shine",time: "12 - 34 Mins",phone: "+92 32459086",address: "Qataba chowk",appointment: "Today 3:00")
         
-        upcomingOrdersArray.append(obj1)
-        upcomingOrdersArray.append(obj2)
+        upcomingOrdersArray.append(obj5)
+        upcomingOrdersArray.append(obj6)
         
     }
     private func updateButtonUI(isTodaySelected: Bool) {
