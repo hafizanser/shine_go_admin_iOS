@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84455FE92EAC144F001986EA /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84455FE82EAC144F001986EA /* FirebaseCore */; };
+		84455FEB2EAC144F001986EA /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 84455FEA2EAC144F001986EA /* FirebaseInAppMessaging-Beta */; };
+		84455FED2EAC144F001986EA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 84455FEC2EAC144F001986EA /* FirebaseMessaging */; };
+		84455FEF2EAC144F001986EA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 84455FEE2EAC144F001986EA /* FirebaseStorage */; };
+		84455FF22EAC163C001986EA /* NotifcationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84455FF12EAC163B001986EA /* NotifcationModel.swift */; };
 		E254FD5D2EA787BB00AD04DD /* LoginsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD5C2EA787BB00AD04DD /* LoginsVC.swift */; };
 		E254FD752EA787C700AD04DD /* ProfilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD5F2EA787C700AD04DD /* ProfilesVC.swift */; };
 		E254FD762EA787C700AD04DD /* logoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E254FD612EA787C700AD04DD /* logoutCell.xib */; };
@@ -132,6 +137,8 @@
 
 /* Begin PBXFileReference section */
 		190954A405B58A717013638D /* Pods-ShineGo_Admin_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineGo_Admin_iOS.release.xcconfig"; path = "Target Support Files/Pods-ShineGo_Admin_iOS/Pods-ShineGo_Admin_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		84455FF02EAC148B001986EA /* ShineGo_Admin_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShineGo_Admin_iOS.entitlements; sourceTree = "<group>"; };
+		84455FF12EAC163B001986EA /* NotifcationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifcationModel.swift; sourceTree = "<group>"; };
 		865AA3EFD40E59BC1908790D /* Pods-ShineGo_Admin_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineGo_Admin_iOS.debug.xcconfig"; path = "Target Support Files/Pods-ShineGo_Admin_iOS/Pods-ShineGo_Admin_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7EF7B88702F82E26C9FBC9 /* Pods_ShineGo_Admin_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShineGo_Admin_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E254FD5C2EA787BB00AD04DD /* LoginsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginsVC.swift; sourceTree = "<group>"; };
@@ -264,7 +271,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84455FED2EAC144F001986EA /* FirebaseMessaging in Frameworks */,
+				84455FE92EAC144F001986EA /* FirebaseCore in Frameworks */,
 				EFF9BC43EC2591796C72F769 /* Pods_ShineGo_Admin_iOS.framework in Frameworks */,
+				84455FEF2EAC144F001986EA /* FirebaseStorage in Frameworks */,
+				84455FEB2EAC144F001986EA /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +450,7 @@
 		E2CDCADD2EA679CC001501A8 /* ShineGo_Admin_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				84455FF02EAC148B001986EA /* ShineGo_Admin_iOS.entitlements */,
 				E2CDCAF62EA67B91001501A8 /* Delegates */,
 				E2CDCAF42EA679E2001501A8 /* StoryBoards */,
 				E2CDCAF22EA679DD001501A8 /* ViewController */,
@@ -709,6 +721,7 @@
 		E2CDCB572EA67C8A001501A8 /* Request Response Models */ = {
 			isa = PBXGroup;
 			children = (
+				84455FF12EAC163B001986EA /* NotifcationModel.swift */,
 				E2CDCB582EA67C8A001501A8 /* OrdersModels.swift */,
 				E2CDCB592EA67C8A001501A8 /* CreditCardModels.swift */,
 				E2CDCB5A2EA67C8A001501A8 /* WishListModels.swift */,
@@ -809,6 +822,9 @@
 				Base,
 			);
 			mainGroup = E2CDCAD22EA679CC001501A8;
+			packageReferences = (
+				84455FE72EAC144F001986EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E2CDCADC2EA679CC001501A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -881,9 +897,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ShineGo_Admin_iOS/Pods-ShineGo_Admin_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ShineGo_Admin_iOS/Pods-ShineGo_Admin_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -981,6 +1001,7 @@
 				E2CDCB8B2EA67C8A001501A8 /* PanModalPresentable.swift in Sources */,
 				E254FD792EA787C700AD04DD /* privacyPolicyCell.swift in Sources */,
 				E2CDCBB72EA67C8A001501A8 /* UIView+Extension.swift in Sources */,
+				84455FF22EAC163C001986EA /* NotifcationModel.swift in Sources */,
 				E2CDCBA32EA67C8A001501A8 /* ModelParser.swift in Sources */,
 				E254FD5D2EA787BB00AD04DD /* LoginsVC.swift in Sources */,
 				E2CDCB8A2EA67C8A001501A8 /* PanModalPresentable+Defaults.swift in Sources */,
@@ -1139,9 +1160,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShineGo_Admin_iOS/ShineGo_Admin_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J844R5VT6S;
+				DEVELOPMENT_TEAM = GGCKH8PJ7U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShineGo_Admin_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1154,8 +1177,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com-codelps.ShineGo-Admin-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelps.shineamdin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1172,9 +1196,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShineGo_Admin_iOS/ShineGo_Admin_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J844R5VT6S;
+				DEVELOPMENT_TEAM = GGCKH8PJ7U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShineGo_Admin_iOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1187,8 +1213,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com-codelps.ShineGo-Admin-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelps.shineamdin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1221,6 +1248,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84455FE72EAC144F001986EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84455FE82EAC144F001986EA /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84455FE72EAC144F001986EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		84455FEA2EAC144F001986EA /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84455FE72EAC144F001986EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		84455FEC2EAC144F001986EA /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84455FE72EAC144F001986EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		84455FEE2EAC144F001986EA /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84455FE72EAC144F001986EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2CDCAD32EA679CC001501A8 /* Project object */;
 }

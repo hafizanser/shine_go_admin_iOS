@@ -47,6 +47,7 @@ struct Storyboards {
 }
 
 extension Notification.Name {
+    static let NOTIFICATION_RECEIVED = NSNotification.Name("NOTIFICATION_RECEIVED")
     static let DISMISS_POPUP_VC = NSNotification.Name("DISMISS_POPUP_VC")
     static let NETWORK_ARRIVE = NSNotification.Name.init(rawValue: "networkArrive")
     static let NOTIFICATION_CLICK = NSNotification.Name("NOTIFICATION_CLICK")
@@ -147,6 +148,7 @@ struct Fonts {
 
 
 struct K {
+    static let ORDER_ID = "order_id"
     static let CREATOR_SUBSCRIPTION_PLAN_ID = "price_1JSYaQFeIF6WMynjPMdqTFBs"
     static let PUBLISH_WORKOUT_VISIBILITY_PUBLIC = "public"
     static let PUBLISH_WORKOUT_VISIBILITY_PRIVATE = "private"
@@ -249,6 +251,12 @@ struct K {
     static let SUPPORT_PHONE_NUMBER_ABROAD = "9723386714"
 
 
+}
+
+struct NotificationKeys {
+    static let ORDER_ID = "order_id"
+    static let NOTIFICATION_TYPE = "notification_type "
+    static let NOTIFICATION_USERINFO = "notificationUserInfo"
 }
 
 struct UserDefaultKeys {
@@ -580,6 +588,8 @@ struct Colors {
     
     
 }
+
+
 
 
 
