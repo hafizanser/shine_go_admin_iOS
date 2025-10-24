@@ -12,6 +12,7 @@
 		84455FED2EAC144F001986EA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 84455FEC2EAC144F001986EA /* FirebaseMessaging */; };
 		84455FEF2EAC144F001986EA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 84455FEE2EAC144F001986EA /* FirebaseStorage */; };
 		84455FF22EAC163C001986EA /* NotifcationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84455FF12EAC163B001986EA /* NotifcationModel.swift */; };
+		84455FFF2EAC28FB001986EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84455FFE2EAC28FB001986EA /* GoogleService-Info.plist */; };
 		E254FD5D2EA787BB00AD04DD /* LoginsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD5C2EA787BB00AD04DD /* LoginsVC.swift */; };
 		E254FD752EA787C700AD04DD /* ProfilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E254FD5F2EA787C700AD04DD /* ProfilesVC.swift */; };
 		E254FD762EA787C700AD04DD /* logoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E254FD612EA787C700AD04DD /* logoutCell.xib */; };
@@ -139,6 +140,7 @@
 		190954A405B58A717013638D /* Pods-ShineGo_Admin_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineGo_Admin_iOS.release.xcconfig"; path = "Target Support Files/Pods-ShineGo_Admin_iOS/Pods-ShineGo_Admin_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		84455FF02EAC148B001986EA /* ShineGo_Admin_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShineGo_Admin_iOS.entitlements; sourceTree = "<group>"; };
 		84455FF12EAC163B001986EA /* NotifcationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifcationModel.swift; sourceTree = "<group>"; };
+		84455FFE2EAC28FB001986EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		865AA3EFD40E59BC1908790D /* Pods-ShineGo_Admin_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShineGo_Admin_iOS.debug.xcconfig"; path = "Target Support Files/Pods-ShineGo_Admin_iOS/Pods-ShineGo_Admin_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7EF7B88702F82E26C9FBC9 /* Pods_ShineGo_Admin_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShineGo_Admin_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E254FD5C2EA787BB00AD04DD /* LoginsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginsVC.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 				E254FDCC2EA7998D00AD04DD /* Clip.mp4 */,
 				E254FD862EA78C5F00AD04DD /* Fonts */,
 				E2CDCAE72EA679CF001501A8 /* Assets.xcassets */,
+				84455FFE2EAC28FB001986EA /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -858,6 +861,7 @@
 				E254FDDD2EA7D06700AD04DD /* Epilogue-Light.ttf in Resources */,
 				E254FDE22EA7D06700AD04DD /* Epilogue-Bold.ttf in Resources */,
 				E2CDCAE62EA679CC001501A8 /* Main.storyboard in Resources */,
+				84455FFF2EAC28FB001986EA /* GoogleService-Info.plist in Resources */,
 				E254FDE02EA7D06700AD04DD /* Epilogue-Regular.ttf in Resources */,
 				E2CDCAF82EA67C38001501A8 /* Popups.storyboard in Resources */,
 				E254FDE32EA7D06700AD04DD /* Epilogue-Medium.ttf in Resources */,
