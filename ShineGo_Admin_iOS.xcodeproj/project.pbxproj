@@ -174,7 +174,7 @@
 		E254FDDA2EA7D06700AD04DD /* Epilogue-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-ExtraBold.ttf"; sourceTree = "<group>"; };
 		E254FDDB2EA7D06700AD04DD /* Epilogue-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Bold.ttf"; sourceTree = "<group>"; };
 		E254FDDC2EA7D06700AD04DD /* Epilogue-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-Medium.ttf"; sourceTree = "<group>"; };
-		E2CDCADB2EA679CC001501A8 /* ShineGo_Admin_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShineGo_Admin_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CDCADB2EA679CC001501A8 /* ShineNGo Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShineNGo Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CDCADE2EA679CC001501A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2CDCAE02EA679CC001501A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2CDCAE52EA679CC001501A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -444,7 +444,7 @@
 		E2CDCADC2EA679CC001501A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2CDCADB2EA679CC001501A8 /* ShineGo_Admin_iOS.app */,
+				E2CDCADB2EA679CC001501A8 /* ShineNGo Admin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -798,7 +798,7 @@
 			);
 			name = ShineGo_Admin_iOS;
 			productName = ShineGo_Admin_iOS;
-			productReference = E2CDCADB2EA679CC001501A8 /* ShineGo_Admin_iOS.app */;
+			productReference = E2CDCADB2EA679CC001501A8 /* ShineNGo Admin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1182,7 +1182,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codelps.shineamdin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ShineNGo Admin";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1218,7 +1218,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codelps.shineamdin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ShineNGo Admin";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
